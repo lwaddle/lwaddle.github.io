@@ -1,0 +1,298 @@
+:root {
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --primary-rgb: 13, 110, 253;
+    --secondary-rgb: 108, 117, 125;
+    --success-rgb: 25, 135, 84;
+    --info-rgb: 13, 202, 240;
+    --warning-rgb: 255, 193, 7;
+    --danger-rgb: 220, 53, 69;
+    --light-rgb: 248, 249, 250;
+    --dark-rgb: 33, 37, 41;
+    --white-rgb: 255, 255, 255;
+    --black-rgb: 0, 0, 0;
+    --body-color-rgb: 33, 37, 41;
+    --body-bg-rgb: 255, 255, 255;
+    --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --body-font-family: var(--font-sans-serif);
+    --body-font-size: 1rem;
+    --body-font-weight: 400;
+    --body-line-height: 1.5;
+    --body-color: #212529;
+    --body-bg: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    line-height: var(--body-line-height);
+    color: var(--body-color);
+    text-align: var(--body-text-align);
+    background-color: var(--body-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    padding-left: 2rem;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.layout {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+}
+
+.layout--landing {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(0, auto);
+    grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "main main main main"
+        "aside aside aside aside"
+        "footer footer footer footer";
+}
+
+@media (min-width: 768px) {
+    .layout--landing {
+        grid-template-columns: 1fr repeat(5, 144px) 1fr;
+        grid-template-areas:
+            "nav nav nav nav nav nav nav"
+            "header header header header header header header"
+            ". main main main aside aside ."
+            "footer footer footer footer footer footer footer";
+    }
+}
+
+@media (min-width: 992px) {
+    .layout--landing {
+        grid-template-columns: 1fr repeat(5, 192px) 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .layout--landing {
+        grid-template-columns: 1fr repeat(5, 228px) 1fr;
+    }
+}
+
+.archive {
+    margin-right: 10px;
+    border: 1px solid var(--gray-400);
+    border-radius: 5px;
+}
+
+.archive__link:link,
+.archive__link:visited {
+    color: var(--gray-dark);
+}
+
+.archive__link:hover,
+.archive__link:active {
+    color: var(--gray-600);
+}
+
+.archive__title {
+    padding-left: 20px;
+}
+
+.aside {
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.blog-post-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--gray-100);
+}
+
+.blog-post-card__cta {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    color: var(--gray-800);
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.blog-post-card__cta:visited {
+    color: var(--gray-800);
+}
+
+.blog-post-card__cta:hover {
+    background-color: var(--gray-800);
+    color: #fff;
+    border-color: var(--gray-800);
+}
+
+.blog-post-card__date {
+    font-size: 14px;
+}
+
+.blog-post-card__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.featured-image {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.featured-image__img {
+    max-width: 100%;
+}
+
+.footer {
+    display: flex;
+    margin-top: 100px;
+    background-color: var(--gray-800);
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+}
+
+.footer__copyright {
+    color: #fff;
+    text-align: center;
+}
+
+.hero-header {
+    display: flex;
+    height: 150px;
+    padding: 10px;
+    background-color: var(--gray-200);
+    /* background-image: url(../assets/images/bg-private-jet-fuselage-and-tail.jpg); */
+    background: linear-gradient(0deg, rgba(73, 73, 73, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/bg-private-jet-fuselage-and-tail.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-header__title {
+    text-align: center;
+    color: #fff;
+}
+
+.main {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    background-color: var(--dark);
+}
+
+.navbar__brand,
+.navbar__brand:visited,
+.navbar__brand:hover,
+.navbar__brand:active {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.navbar__brand:visited {
+    color: #fff;
+}
+
+.navbar__item {
+    margin: 0 10px;
+}
+
+.navbar__link,
+.navbar__link:visited {
+    color: #fff;
+    font-weight: 300;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar__link:visited {
+    color: #fff;
+}
+
+.navbar__link--active {
+    font-weight: 500;
+}
+
+.navbar__list {
+    display: flex;
+    margin-right: 10px;
+    margin-left: auto;
+    list-style: none;
+}
