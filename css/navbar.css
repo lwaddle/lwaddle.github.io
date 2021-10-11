@@ -1,0 +1,47 @@
+@import url(colors.css);
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: var(--dark);
+}
+
+.navbar__brand:link,
+.navbar__brand:visited {
+    margin-left: 10px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.navbar__item {
+    padding-left: 25px;
+}
+
+.navbar__link:link,
+.navbar__link:visited {
+    color: var(--white);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+    color: var(--gray-300);
+}
+
+.navbar__link--active {
+    font-weight: bold;
+}
+
+.navbar__list {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 0;
+    list-style: none;
+}
