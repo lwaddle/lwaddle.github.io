@@ -20,4 +20,16 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: var(--gray-200);
+    line-height: 1.8em;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:active {
+    color: var(--gray-600);
 }

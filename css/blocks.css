@@ -1,3 +1,33 @@
+.ad-banner {
+    display: flex;
+    display: none;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .ad-banner {
+        display: contents;
+    }
+}
+
+.ad-banner__img {
+    max-width: 90%;
+}
+
+.ad-banner__link {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.more-posts-widget {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.more-posts-widget__list {
+    margin-bottom: 30px;
+}
+
 .post-card {
     display: flex;
     flex-direction: column;
@@ -37,7 +67,7 @@
 
 .post-card__preview {
     margin-bottom: 15px;
-    line-height: 1.8em;
+    /* line-height: 1.8em; */
 }
 
 .post-card__title {
