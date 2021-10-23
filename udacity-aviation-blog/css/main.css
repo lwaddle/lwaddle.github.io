@@ -1,0 +1,26 @@
+@import url(blog-post.css);
+@import url(footer.css);
+@import url(grid-layout.css);
+@import url(hero-image.css);
+@import url(meta-view.css);
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap);
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(226, 229, 255);
+}
+
+.content__img {
+    float: left;
+    max-width: 100%;
+    height: auto;
+}

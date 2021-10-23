@@ -1,0 +1,17 @@
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(50,65,83,0.5), rgba(50,65,83,0.9)), url(../images/bg-private-jet-fuselage-and-tail.jpg);
+	height: 40vh;
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero-image__title {
+    margin: 0;
+	text-align: center;
+	color: #fff;
+    text-transform: uppercase;
+}

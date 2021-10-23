@@ -1,0 +1,25 @@
+.meta-view {
+    display: flex;
+    margin: 1em 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.meta-view__author-meta {
+    width: 100%;
+}
+
+.meta-view__author-profile-img {
+    min-width: 40px;
+    max-width: 80px;
+    height: auto;
+    border-radius: 500px;
+}
+
+.meta-view__text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 1em;
+}

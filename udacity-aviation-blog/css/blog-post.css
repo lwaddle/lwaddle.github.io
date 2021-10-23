@@ -1,0 +1,18 @@
+.blog-post {
+    padding: 1em 1em;
+    background-color: #fff;
+    line-height: 1.7em;
+}
+
+.blog-post__img {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.blog-post figcaption {
+    color: rgb(107, 107, 107);
+    text-align: center;
+    font-style: italic;
+    margin-top: -1em;
+    font-size: 0.9em;
+}
