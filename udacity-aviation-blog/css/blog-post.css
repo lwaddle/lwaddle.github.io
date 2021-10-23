@@ -1,5 +1,5 @@
 .blog-post {
-    padding: 1em 1em;
+    padding: 1rem 1rem;
     background-color: #fff;
 }
 
@@ -17,6 +17,6 @@
     color: rgb(107, 107, 107);
     text-align: center;
     font-style: italic;
-    margin-top: -1em;
+    margin-top: -1rem;
     font-size: 0.9em;
 }
