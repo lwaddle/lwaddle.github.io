@@ -109,3 +109,7 @@
 .navbar__brand * {
     color: transparent;
 }
+
+.navbar__toggler {
+    color: var(--theme-color-dark-gray, rgb(46, 46, 46));
+}
